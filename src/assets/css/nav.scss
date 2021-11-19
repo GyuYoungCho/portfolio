@@ -1,0 +1,29 @@
+navbar {
+  nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 2rem;
+
+    .title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      color: inherit;
+    }
+  }
+
+  .menus {
+    display: flex;
+    padding: 0.25rem 1rem;
+  }
+  .menu-item {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .current {
+    font-weight: 500;
+  }
+}
