@@ -1,5 +1,5 @@
 <template>
-  <section class="nav">
+  <section class="navbar">
     <nav class="fixed-top">
         <router-link class="title" :to="{ name: 'Home' }">GyuYoung</router-link>
         <div class="menus">
@@ -13,10 +13,10 @@
             :to="{ name: 'Project' }"
             >Project</router-link
         >
-        <router-link 
+        <!-- <router-link 
             :class="[page === 'Code' ? 'current': '', 'menu-item']"
             :to="{ name: 'Code' }"
-        >Works</router-link>
+        >Works</router-link> -->
         </div>
     </nav>
   </section>
