@@ -1,44 +1,60 @@
 .project {
-  height: 560px;
+  margin-top: 150px;
+  height: 800px;
 
-  span {
-    margin: auto;
-    font-size: 3rem;
-  }
-
-  .container {
+  #project-container {
     position: relative;
-    width: 320px;
+    display: flex;
+    width: 300px;
     perspective: 1000px;
-    margin: 50px auto;
+    margin: 80px auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
   }
 
-  .carousel {
-    position: absolute;
+  #project-carousel {
+    position: relative;
+    display: flex;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
+    transform: rotateX(-10deg);
     /* 도는 속도 */
-    animation: rotate360 40s infinite forwards linear;
+    animation: rotate360 60s infinite forwards linear;
   }
-  .carousel:hover {
-    cursor: pointer;
-    animation-play-state: paused;
+
+  .carousel__title {
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    text-align: center;
   }
 
   .carousel__face {
     position: absolute;
     // 사이즈 변경함
-    width: 187px;
+    width: 190px;
     height: 300px;
     top: 20px;
     left: 0px;
     right: 0px;
     background-size: cover;
-    // box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     display: flex;
     border-radius: 10px;
-    background-color: aquamarine;
+
+    -webkit-box-reflect: below 10px linear-gradient (transparent, transparent, #0005);
+
+    &:hover {
+      cursor: pointer;
+      //   animation-play-state: paused;
+      -webkit-box-reflect: below 10px linear-gradient (transparent, transparent, #0007);
+    }
+
+    img {
+      width: 190px;
+      border-radius: 10px;
+    }
   }
   //   애니메이션 rotate360(애니메인션명)의 중간상태 지정용
   @keyframes rotate360 {
@@ -46,7 +62,67 @@
       transform: rotateY(0deg);
     }
     to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
       transform: rotateY(360deg);
     }
   }
+
+  @keyframes spinRevert {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+  //   @-webkit-keyframes spin {
+  //     from {
+  //       -webkit-transform: rotateY(0deg);
+  //       transform: rotateY(0deg);
+  //     }
+  //     to {
+  //       -webkit-transform: rotateY(360deg);
+  //       transform: rotateY(360deg);
+  //     }
+  //   }
+
+  //   @keyframes spin {
+  //     from {
+  //       -webkit-transform: rotateY(0deg);
+  //       transform: rotateY(0deg);
+  //     }
+  //     to {
+  //       -webkit-transform: rotateY(360deg);
+  //       transform: rotateY(360deg);
+  //     }
+  //   }
+  //   @-webkit-keyframes spinRevert {
+  //     from {
+  //       -webkit-transform: rotateY(360deg);
+  //       transform: rotateY(360deg);
+  //     }
+  //     to {
+  //       -webkit-transform: rotateY(0deg);
+  //       transform: rotateY(0deg);
+  //     }
+  //   }
+  //   @keyframes spinRevert {
+  //     from {
+  //       -webkit-transform: rotateY(360deg);
+  //       transform: rotateY(360deg);
+  //     }
+  //     to {
+  //       -webkit-transform: rotateY(0deg);
+  //       transform: rotateY(0deg);
+  //     }
+  //   }
 }

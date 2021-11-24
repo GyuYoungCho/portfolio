@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <Navbar  />
+    <Navbar/>
     <router-view/>
   </div>
 </template>
 
 <script>
 import "./assets/css/index.scss"
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: 'App',
-  components: {
-    Navbar,
-
+  components:{
+    Navbar
   },
   computed: {
     isHome() {

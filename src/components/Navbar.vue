@@ -2,21 +2,37 @@
   <section class="navbar">
     <nav class="fixed-top">
         <router-link class="title" :to="{ name: 'Home' }">GyuYoung</router-link>
-        <div class="menus">
-        <router-link
-            :class="[page === 'About' ? 'current' : '', 'menu-item']"
-            :to="{ name: 'About' }"
-            >About</router-link
-        >
-        <router-link
-            :class="[page === 'Project' ? 'current' : '', 'menu-item']"
-            :to="{ name: 'Project' }"
-            >Project</router-link
-        >
-        <!-- <router-link 
-            :class="[page === 'Code' ? 'current': '', 'menu-item']"
-            :to="{ name: 'Code' }"
-        >Works</router-link> -->
+        <div class="menus" v-if="$route.name=='Home'">
+          <ul>
+              <li>
+                  <a href="#about">About</a>
+              </li>
+              <li>
+                  <a href="#project">Project</a>
+              </li>
+              <li>
+                  <a href="#skill">Skills</a>
+              </li>
+              <li>
+                  <a href="#experience">Experience</a>
+              </li>
+          </ul>
+        </div>
+        <div class="menus" v-if="$route.name=='ProjectDetail'">
+          <ul>
+              <li>
+                  <a href="#text">Text</a>
+              </li>
+              <li>
+                  <a href="#architecture">Architecture</a>
+              </li>
+              <li>
+                  <a href="#implement">Implement</a>
+              </li>
+              <li>
+                  <a href="#issue">Issue</a>
+              </li>
+          </ul>
         </div>
     </nav>
   </section>
