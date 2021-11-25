@@ -1,7 +1,19 @@
 <template>
 <div class="experience">
-	<span class="title" id="experience">Experience</span>
-  
+	<span class="title" id="experience">Edu & Exp</span>
+    
+    <div class="container">
+    <div class="timeline">
+    <ul>
+      <li v-for="(item, index) in events" :key="index">
+        <div class="timeline-content">
+          <h3 class="date">{{item.date}}</h3>
+          <pre>{{item.content}}</pre>
+        </div>
+      </li>
+    </ul>
+  </div>
+    </div>
 </div>
 </template>
 
@@ -13,14 +25,11 @@ export default {
     data() {
         return {
             events: [
-                {status: 'Ordered', date: '15/10/2020 10:30', icon: 'pi pi-shopping-cart', color: '#9C27B0', image: 'game-controller.jpg'},
-                {status: 'Processing', date: '15/10/2020 14:00', icon: 'pi pi-cog', color: '#673AB7'},
-                {status: 'Shipped', date: '15/10/2020 16:15', icon: 'pi pi-shopping-cart', color: '#FF9800'},
-                {status: 'Delivered', date: '16/10/2020 10:00', icon: 'pi pi-check', color: '#607D8B'}
+                {date: '2015.03 ~ 2021.02', content: `인하대학교 \n 전공 - 컴퓨터공학 \n 복수전공 - 통계학`},
+                {date: '2020.07 ~ 2020.08', content: '빅데이터 청년인재'},
+                {date: '2020.09 ~ 2020.11', content: 'AI Innovation 고급시각반'},
+                {date: '2021.01 ~', content: '삼성 청년 SW 아카데미 5기'},
             ],
-            events2: [
-                "2020", "2021", "2022", "2023"
-            ]
         }
     }
 }

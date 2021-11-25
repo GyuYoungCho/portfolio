@@ -2,9 +2,9 @@
   <div>
       <Slogan />
       <About />
-      <Project />
+      <Experience />
       <Skills />
-      <Experience/>
+      <Project />
   </div>
 </template>
 

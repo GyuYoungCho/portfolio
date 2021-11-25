@@ -20,7 +20,8 @@ export default new Vuex.Store({
         stages: [
           {
             imgurl: "metaone/image0.png",
-            info: `교실에 들어가면 교육 영상 시청 가능 영상 시청 후 미션 가능. 하이라이트된 오브젝트를 클릭함으로써 수행 가능`,
+            info:
+              "교실에 들어가면 교육 영상 시청 가능 영상 시청 후 미션 가능." + `<br />` + "하이라이트된 오브젝트를 클릭함으로써 수행 가능",
           },
           {
             imgurl: "metaone/image1.png",
@@ -51,12 +52,71 @@ export default new Vuex.Store({
       {
         id: 2,
         title: "BOOKS",
+        subtitle: "(BOOK Search)",
         filepath: "books.png",
+        description: "검색 기록, 리뷰, 관심 카테고리 등의 사용자 정보를 이용하여 맞춤 도서를 추천받을 수 있습니다.",
+        people: 4,
+        duration: "2021.08.30 ~ 2021.10.08",
+        role: "Backend, Recommend Algorithm",
+        github: "https://github.com/GyuYoungCho/BOOKS",
+        stacks: ["Spring boot", "MySQL", "Firebase", "Redis", "Vue.js", "Unity", "WebGL", "Ngnix"],
+        stages: [
+          {
+            imgurl: "books/main.gif",
+            info: `교실에 들어가면 교육 영상 시청 가능 영상 시청 후 미션 가능. 하이라이트된 오브젝트를 클릭함으로써 수행 가능`,
+          },
+          {
+            imgurl: "books/recommend.gif",
+            info: "미션 시작 후 게임 실행 화면. 왼쪽에 미션 리스트가 뜨고 남은 시간, 가이드 제공",
+          },
+          {
+            imgurl: "books/search.gif",
+            info: "교육 영상 이수나 미션시 교육 내역에 기록되고 미션을 통과하면 증명서 발급 가능",
+          },
+          {
+            imgurl: "metaone/image0.png",
+            info: "각 교육에 대한 랭킹 시스템 제공",
+          },
+          {
+            imgurl: "metaone/image1.png",
+            info: "책 오브젝트를 클릭 시 방명록 시스템 제공",
+          },
+        ],
       },
       {
         id: 3,
         title: "OVL",
+        subtitle: "(Our Vegan Life)",
         filepath: "ovl.png",
+        description:
+          "다른 사람들과 레시피를 공유하고 채식팟과 챌린지 기능을 통해서 사람들과 함께 하고 성취감 있게 만들어주는 비건 실천 장려 SNS입니다.",
+        people: 5,
+        duration: "2021.07.06. ~ 2021.08.20",
+        role: "Backend, Frontend",
+        github: "https://github.com/GyuYoungCho/OVL",
+        stacks: ["Spring boot", "MySQL", "Vue.js", "Ngnix"],
+        stages: [
+          {
+            imgurl: "ovl/image0.png",
+            info: `교실에 들어가면 교육 영상 시청 가능 영상 시청 후 미션 가능. 하이라이트된 오브젝트를 클릭함으로써 수행 가능`,
+          },
+          {
+            imgurl: "ovl/image1.png",
+            info: "미션 시작 후 게임 실행 화면. 왼쪽에 미션 리스트가 뜨고 남은 시간, 가이드 제공",
+          },
+          {
+            imgurl: "ovl/image2.png",
+            info: "교육 영상 이수나 미션시 교육 내역에 기록되고 미션을 통과하면 증명서 발급 가능",
+          },
+          {
+            imgurl: "ovl/image3.png",
+            info: "각 교육에 대한 랭킹 시스템 제공",
+          },
+          {
+            imgurl: "ovl/image4.png",
+            info: "프로필 화면에서 프로필 수정, 팔로우 기능, 팔로워 & 팔로잉 목록, 랭킹, 신고 기능 및 해당 사용자의 게시글, 레시피, 챌린지 보이게 하기",
+          },
+        ],
       },
       {
         id: 4,

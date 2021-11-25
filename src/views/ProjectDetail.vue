@@ -5,13 +5,13 @@
       <div class="image__wrapper">
         <img :src="require(`@/assets/image/mainImage/${imageUrl}`)" class="project__image" />
       </div>
-      <div class="title">{{ title }}</div>
+      <div class="title"><pre>{{ title }}</pre></div>
       <div class="description">{{ description }}</div>
       
     </div>
-    <hr id="text">
+    <hr id="info">
     <div class="text_info">
-      <h2> Text </h2>
+      <h2> Info </h2>
       <div class="od">기간 : {{duration}}</div>
       <div class="od">인원 : {{people}}</div>
       <div class="od">역할 : {{role}}</div>
@@ -37,9 +37,9 @@
       </div>
     </div>
 
-    <hr id="Issue">
-    <div class="issue_info">
-      <h2> Issue </h2>
+    <hr id="Content">
+    <div class="content_info">
+      <h2> Content </h2>
       
     </div>
   </div>
@@ -70,6 +70,9 @@ export default {
         return this.stacks || [];
         },
         title(){
+          if(this.items[this.pro_id-1].subtitle){
+            return this.items[this.pro_id-1].title + `\n`+ this.items[this.pro_id-1].subtitle
+          }
           return this.items[this.pro_id-1].title
         },
         description(){

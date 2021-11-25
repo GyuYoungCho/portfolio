@@ -7,6 +7,9 @@
         <img src="../assets/image/profile.png" />
         
         <div class="profile-name">조규영</div>
+        <div class="profile-name">
+          <div class="small-tag">to be..</div>
+          AI Engineer <span class="small-tag">or</span><br> Backend Developer</div>
       </div>
       <div class="info-all-wrapper">
         <div class="info-wrapper">
@@ -26,11 +29,7 @@
             https://github.com/gyuyoungcho
           </a>
         </div>
-        <div class="info-wrapper"> blog : &nbsp;
-          <a href="https://gyuyoungcho.github.io/" target="_blank" class="icon-img-wrapper">
-            https://gyuyoungcho.github.io/
-          </a>
-        </div>
+        
       </div>
     </div>
 

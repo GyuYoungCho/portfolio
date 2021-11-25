@@ -21,6 +21,10 @@
     transform: rotateX(-10deg);
     /* 도는 속도 */
     animation: rotate360 60s infinite forwards linear;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
   .carousel__title {
@@ -47,7 +51,7 @@
 
     &:hover {
       cursor: pointer;
-      //   animation-play-state: paused;
+      box-shadow: 0 0 20px white;
       -webkit-box-reflect: below 10px linear-gradient (transparent, transparent, #0007);
     }
 

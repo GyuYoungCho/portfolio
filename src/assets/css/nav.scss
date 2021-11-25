@@ -7,21 +7,23 @@
   z-index: 2000;
   nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     padding: 0 2rem;
+    display: flex;
 
     .title {
       font-weight: bold;
       font-size: 1.5rem;
       text-decoration: none;
       cursor: pointer;
-      color: inherit;
     }
   }
 
   .menus {
     display: flex;
+    gap: 1rem;
     padding: 0.25rem 1rem;
     font-weight: bold;
   }
@@ -29,9 +31,6 @@
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-  }
-  .current {
-    font-weight: 500;
   }
 
   ul {

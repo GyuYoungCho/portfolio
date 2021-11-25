@@ -2,20 +2,30 @@
   width: 60%;
   display: flex;
   flex-direction: row;
-  margin: 200px auto 10px;
+  align-items: center;
+  margin: 100px auto 10px;
   text-align: left;
+  height: 800px;
 
   .slo_title {
     font-size: 3rem;
-
+    line-height: 170%;
     .slo_key {
-      color: rgb(22, 116, 204);
+      color: #18cccc;
+    }
+
+    .slo_sub {
+      position: absolute;
+      top: 200px;
+      left: 10%;
+      color: rgb(162, 182, 201);
+      font-size: 1.7rem;
     }
   }
   .slide-enter-active {
-    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
   }
   .slide-enter {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
