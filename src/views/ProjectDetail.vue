@@ -14,7 +14,8 @@
       <h2> Info </h2>
       <div class="od">기간 : {{duration}}</div>
       <div class="od">인원 : {{people}}</div>
-      <div class="od">역할 : {{role}}</div>
+      <div class="od"><pre>역할 : {{role}}</pre></div>
+      <div class="od">Stack : {{stacks}}</div>
       <div class="od">Github : <a :href="github">{{github}}</a></div>
     </div>
     <hr id="architecture">
@@ -32,7 +33,7 @@
           <img :src="require(`@/assets/image/${stage.imgurl}`)"  />
         </div>
         <div class="info-wrapper">
-          {{stage.info}}
+          <pre>{{stage.info}}</pre>
         </div>
       </div>
     </div>
@@ -40,7 +41,19 @@
     <hr id="Content">
     <div class="content_info">
       <h2> Content </h2>
-      
+        <div class="gg__wrapper">
+          <h3> 좋았던 점 및 성과 </h3>
+          <div class="comment" v-for="(g, index) in gg" :key="index">
+            <pre><i class="fas fa-medal"></i> &nbsp;{{g}}</pre>
+          </div>
+          
+        </div>
+        <div class="bb__wrapper">
+          <h3> 아쉬운 점 및 발전 방향 </h3>
+          <div class="comment" v-for="(b, index) in bb" :key="index">
+            <pre><i class="fas fa-highlighter"></i> &nbsp;{{b}}</pre>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -93,8 +106,17 @@ export default {
         github(){
           return this.items[this.pro_id-1].github
         },
+        stacks(){
+          return this.items[this.pro_id-1].stacks
+        },
         stages(){
           return this.items[this.pro_id-1].stages
+        },
+        gg(){
+          return this.items[this.pro_id-1].gg
+        },
+        bb(){
+          return this.items[this.pro_id-1].bb
         }
     },
     filters: {

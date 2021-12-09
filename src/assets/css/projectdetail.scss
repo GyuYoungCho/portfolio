@@ -10,6 +10,10 @@
     margin-bottom: 30px;
   }
 
+  h3 {
+    margin: 40px 30px 20px;
+  }
+
   .od {
     padding-left: 30px;
   }
@@ -132,13 +136,26 @@
     }
 
     .info-wrapper {
-      padding-left: 20px;
+      padding-left: 50px;
     }
   }
 
   .content_info {
     text-align: left;
     font-size: 1.6rem;
-    margin: 50px 100px;
+    margin: 50px 100px 100px;
+
+    .comment {
+      line-height: 170%;
+      margin-left: 50px;
+
+      .fa-medal {
+        color: rgb(204, 204, 63);
+      }
+
+      .fa-highlighter {
+        color: rgb(24, 170, 228);
+      }
+    }
   }
 }
