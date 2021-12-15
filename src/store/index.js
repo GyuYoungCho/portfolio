@@ -14,7 +14,11 @@ export default new Vuex.Store({
           "학교 안전 및 재난 교육을 메타버스 플랫폼에 적용하여 재난 상황 시 대피 요령을 학습하고, Unity를 활용한 시뮬레이션 미션 체험을 통해 학습한 내용을 플레이할 수 있습니다.",
         people: 3,
         duration: "2021.10.11 ~ 2021.11.19",
-        role: " Backend - 쪽지 채팅 API 구현 (JPA 활용), 기능 수정\n          Frontend - 화면 구현 및 전체 디자인, WebGL Build, QA\n          CI/ CD - Ngnix와 Docker compose를 활용한 배포",
+        role: [
+          " Backend - Rest Api 작성, 쪽지 채팅 API 구현 (JPA 활용)",
+          " Frontend - 화면 구현 및 전체 디자인, WebGL Build, QA",
+          " CI/ CD - Ngnix와 Docker compose를 활용한 배포",
+        ],
         github: "https://github.com/GyuYoungCho/MetaOne",
         stacks: "Java, C#, Spring boot, JPA, MySQL, Redis, Firebase, Vue.js, Unity, Photon, WebGL, Ngnix, Docker",
         stages: [
@@ -65,7 +69,7 @@ export default new Vuex.Store({
         description: "검색 기록, 리뷰, 관심 카테고리 등의 사용자 정보를 이용하여 맞춤 도서를 추천받을 수 있습니다.",
         people: 4,
         duration: "2021.08.30 ~ 2021.10.08",
-        role: "팀장\n         Backend - 데이터 수집 및 가공 (Crawling, API), Book API 구현, 추천 Algorithm 설계 및 구현",
+        role: [" Backend - 데이터 수집 및 가공 (Crawling, API), Book API 구현, 추천 Algorithm 설계 및 구현"],
         github: "https://github.com/GyuYoungCho/BOOKS",
         stacks: "Java, Python, Django, Spring boot, JPA, MySQL, Vue.js, Docker, Jenkins",
         stages: [
@@ -110,7 +114,10 @@ export default new Vuex.Store({
           "다른 사람들과 레시피를 공유하고 채식팟과 챌린지 기능을 통해서 사람들과 함께 하고 성취감 있게 만들어주는 비건 실천 장려 SNS입니다.",
         people: 5,
         duration: "2021.07.06. ~ 2021.08.20",
-        role: "Backend - User 관리, Follow, 채식팟, 챌린지 API (JPA 활용), 챌린지 Scheduling\n           Frontend - 채식팟 화면 구현, Infinite Scroll, QA",
+        role: [
+          " Backend - User 관리, Follow, 채식팟, 챌린지 API (JPA 활용), 챌린지 Scheduling",
+          " Frontend - 채식팟 화면 구현, Infinite Scroll, QA",
+        ],
         github: "https://github.com/GyuYoungCho/OVL",
         stacks: "Java, Spring boot, JPA, MariaDB, Vue.js, Ngnix, Docker, Jenkins",
         stages: [
@@ -159,6 +166,45 @@ export default new Vuex.Store({
         id: 5,
         title: "영양 분석 시스템",
         filepath: "food.png",
+        description:
+          "사용자가 먹은 음식 사진을 찍으면 서비스가 음식을 보고 어떤 음식인지 인식하게 됩니다. 그 음식의 영양 성분 데이터를 활용해서 영양성분을 누적하여 영양성분 권장 섭취량과 비교하여 부족한 영양소를 포함한 음식을 추천해줍니다.",
+        people: 5,
+        duration: "2020.07.06. ~ 2020.08.31",
+        role: [
+          " Backend - Image crawling, Data labeling, Model 학습, 성능 분석",
+          " Frontend - Model load, 추천 결과 보여주기",
+        ],
+        github: "https://github.com/GyuYoungCho/Personalized-Diet-Management-System",
+        stacks: "Python, Selenium, SQLite3, PyTorch, Yolov3, Flask",
+        stages: [
+          {
+            imgurl: "food/image0.png",
+            info: `뉴스피드 화면 및 게시글 작성 화면\n팔로우한 사람들의 게시글이 보임`,
+          },
+          {
+            imgurl: "food/image1.png",
+            info: "레시피 등록 및 목록 화면\n과정 탭을 통해 사진마다 설명을 적을 수 있음.\n레시피 정렬 방식 및 검색 기능 제공",
+          },
+          {
+            imgurl: "food/image2.png",
+            info: "채식팟 등록 화면 및 목록 화면\n식당 검색, 지도 위치 표시, 채식팟 참여, 참여 중 및 참여 가능 목록,\n참여자 목록 및 취소,수정 기능 제공",
+          },
+          {
+            imgurl: "food/image3.png",
+            info: "챌린지 참여 기능\n챌린지 참여 후 Scheduling을 활용해 해당 날짜가 되면 자동으로 챌린지를 시작하게 함\n도장 및 progress bar로 달성 기록 확인",
+          },
+        ],
+
+        gg: [
+          "현재 이슈 및 이슈를 해결할 서비스를 생각하여 문제 정의를 잘했다는 평을 받음",
+          "Object Detection 모델을 써보고 Computer Vision 분야에 관심을 가지게 됨.",
+          "팀원 대부분이 비전공이었지만 교육 내용을 바탕으로 프로젝트를 잘 완성시켰다.",
+        ],
+        bb: [
+          "첫 프로젝트인 만큼 협업 과정에서 아쉬운 부분이 많았다.",
+          "시간이 좀 더 있었다면 모델을 더 학습시켜 더 좋은 모델을 완성했을 것 같다.",
+          "페이지에서 데이터 흐름이 어떻게 되는지 이해가 부족하여 웹 관련 지식이 부족했다고 느낌",
+        ],
       },
       {
         id: 6,

@@ -14,7 +14,7 @@
       <h2> Info </h2>
       <div class="od">기간 : {{duration}}</div>
       <div class="od">인원 : {{people}}</div>
-      <div class="od"><pre>역할 : {{role}}</pre></div>
+      
       <div class="od">Stack : {{stacks}}</div>
       <div class="od">Github : <a :href="github">{{github}}</a></div>
     </div>
@@ -41,6 +41,12 @@
     <hr id="Content">
     <div class="content_info">
       <h2> Content </h2>
+        <div class="role__wrapper">
+          <h3> 역할 </h3>
+          <div class="comment" v-for="(r, index) in role" :key="index">
+            <pre><i class="fas fa-thumbtack"></i>&nbsp;{{r}}</pre>
+          </div>
+        </div>
         <div class="gg__wrapper">
           <h3> 좋았던 점 및 성과 </h3>
           <div class="comment" v-for="(g, index) in gg" :key="index">
