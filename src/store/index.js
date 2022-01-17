@@ -161,6 +161,45 @@ export default new Vuex.Store({
         id: 4,
         title: "CCTV 날씨 제공",
         filepath: "weather.png",
+        description:
+          "CCTV 영상 데이터를 학습 후 실시간 CCTV 영상을 가져와 현재 날씨 정보(날씨 상황, 강수량, 안개량) 및 교통 정보를 제공합니다.",
+        people: 5,
+        duration: "2020.07.06. ~ 2020.08.31",
+        role: [
+          " Backend - Image crawling, Data labeling, Model 학습, 성능 분석",
+          " Frontend - Model load, 추천 결과 보여주기",
+        ],
+        github: "https://github.com/GyuYoungCho/Personalized-Diet-Management-System",
+        stacks: "Python, Selenium, SQLite3, PyTorch, Yolov3, Flask",
+        stages: [
+          {
+            imgurl: "weather/image0.png",
+            info: `뉴스피드 화면 및 게시글 작성 화면\n팔로우한 사람들의 게시글이 보임`,
+          },
+          {
+            imgurl: "weather/image1.png",
+            info: "레시피 등록 및 목록 화면\n과정 탭을 통해 사진마다 설명을 적을 수 있음.\n레시피 정렬 방식 및 검색 기능 제공",
+          },
+          {
+            imgurl: "weather/image2.png",
+            info: "채식팟 등록 화면 및 목록 화면\n식당 검색, 지도 위치 표시, 채식팟 참여, 참여 중 및 참여 가능 목록,\n참여자 목록 및 취소,수정 기능 제공",
+          },
+          {
+            imgurl: "weather/image3.png",
+            info: "챌린지 참여 기능\n챌린지 참여 후 Scheduling을 활용해 해당 날짜가 되면 자동으로 챌린지를 시작하게 함\n도장 및 progress bar로 달성 기록 확인",
+          },
+        ],
+
+        gg: [
+          "현재 이슈 및 이슈를 해결할 서비스를 생각하여 문제 정의를 잘했다는 평을 받음",
+          "Object Detection 모델을 써보고 Computer Vision 분야에 관심을 가지게 됨.",
+          "팀원 대부분이 비전공이었지만 교육 내용을 바탕으로 프로젝트를 잘 완성시켰다.",
+        ],
+        bb: [
+          "첫 프로젝트인 만큼 협업 과정에서 아쉬운 부분이 많았다.",
+          "시간이 좀 더 있었다면 모델을 더 학습시켜 더 좋은 모델을 완성했을 것 같다.",
+          "페이지에서 데이터 흐름이 어떻게 되는지 이해가 부족하여 웹 관련 지식이 부족했다고 느낌",
+        ],
       },
       {
         id: 5,
