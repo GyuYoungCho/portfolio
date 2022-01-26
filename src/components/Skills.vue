@@ -1,6 +1,6 @@
 <template>
     <section class="skills">
-        <span class="title" id="skill">Skills</span>
+        <span class="title" id="skill">Career</span>
         <div class="section-content">
             
             <div class="col-md-2" v-for="(skill, index) in this.skills" :key="index">
