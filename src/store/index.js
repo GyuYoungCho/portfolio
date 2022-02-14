@@ -20,7 +20,7 @@ export default new Vuex.Store({
           " CI/ CD - Ngnix와 Docker compose를 활용한 배포",
         ],
         github: "https://github.com/GyuYoungCho/MetaOne",
-        stacks: "Java, C#, Spring boot, JPA, MySQL, Redis, Firebase, Vue.js, Unity, Photon, WebGL, Ngnix, Docker",
+        stacks: "Java, C#, Spring boot, JPA, MySQL, Redis, Firebase, Vue.js, Unity, Photon, WebGL, Nginx, Docker",
         stages: [
           {
             imgurl: "metaone/image0.gif",
@@ -295,15 +295,12 @@ export default new Vuex.Store({
         title: "상품 추천 알고리즘",
         filepath: "product.png",
         description:
-          "사용자가 먹은 음식 사진을 찍으면 서비스가 음식을 보고 어떤 음식인지 인식하게 됩니다. 그 음식의 영양 성분 데이터를 활용해서 영양성분을 누적하여 영양성분 권장 섭취량과 비교하여 부족한 영양소를 포함한 음식을 추천해줍니다.",
-        people: 5,
-        duration: "2020.07.06. ~ 2020.09.18",
-        role: [
-          " Backend - Image crawling, Data labeling, Model 학습, 성능 분석",
-          " Frontend - Model load, 추천 결과 보여주기",
-        ],
-        github: "https://github.com/GyuYoungCho/Personalized-Diet-Management-System",
-        stacks: "Python, Selenium, SQLite3, PyTorch, Yolov3, Flask",
+          "성별, 나이에 따른 검색어나 구매 목록 등의 다양한 데이터를 기반으로 식별 정보가 없는 고객에게 상품을 추천하는 공모전 참여",
+        people: 3,
+        duration: "2019.11.27. ~ 2020.01.06",
+        role: [" 데이터 분석 - 데이터 결측치 및 이상치 처리, 결합, 가공, 상품 추천 알고리즘 설계 "],
+        github: "https://github.com/GyuYoungCho/Lpoint-Competition",
+        stacks: "Python, NLP(WordVector, WordCloud), Matplotlib",
         stages: [
           {
             imgurl: "food/image0.png",
