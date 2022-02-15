@@ -18,8 +18,8 @@
       <div class="od">Stack : {{stacks}}</div>
       <div class="od">Github : <a :href="github">{{github}}</a></div>
     </div>
-    <hr id="architecture">
-    <div class="arch_info">
+    <hr id="architecture" v-if="is_arch()">
+    <div class="arch_info" v-if="is_arch()">
       <h2> Architecture </h2>
       <div class="img__wrapper">
         <img :src="require(`@/assets/image/architecture/${imageUrl}`)"  />
@@ -66,7 +66,6 @@
 
 <script>
 import { mapState } from 'vuex';
-
 export default {
 
     computed: {
@@ -143,7 +142,17 @@ export default {
         
     },
     methods: {
-        
+        is_arch(){
+          let a
+          try{
+            a = require(`@/assets/image/architecture/${this.imageUrl}`)
+              
+          } catch(e){
+            return false
+          }
+          if(a) return true 
+          else false
+        }
     },
 }
 </script>

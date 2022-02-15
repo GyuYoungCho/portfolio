@@ -250,16 +250,12 @@ export default new Vuex.Store({
         id: 6,
         title: "반도체 박막 두께 예측",
         filepath: "semiconductor.png",
-        description:
-          "사용자가 먹은 음식 사진을 찍으면 서비스가 음식을 보고 어떤 음식인지 인식하게 됩니다. 그 음식의 영양 성분 데이터를 활용해서 영양성분을 누적하여 영양성분 권장 섭취량과 비교하여 부족한 영양소를 포함한 음식을 추천해줍니다.",
+        description: "Dacon 대회에 참여하여 머신러닝/딥러닝 스터디에 배운 것이나 새로운 기법을 적용해봄",
         people: 5,
-        duration: "2020.07.06. ~ 2020.09.18",
-        role: [
-          " Backend - Image crawling, Data labeling, Model 학습, 성능 분석",
-          " Frontend - Model load, 추천 결과 보여주기",
-        ],
-        github: "https://github.com/GyuYoungCho/Personalized-Diet-Management-System",
-        stacks: "Python, Selenium, SQLite3, PyTorch, Yolov3, Flask",
+        duration: "2020.01.18. ~ 2020.02.07",
+        role: ["데이터 분석 및 딥러닝 적용, 최근에 쓰이는 활성화 함수나 Bayesian 하이퍼 파라미터 튜닝 등 시도"],
+        github: "https://github.com/GyuYoungCho/Dacon_process/blob/master/반도체박막/keras_process6.ipynb",
+        stacks: "Python, Tensorflow2, BayesianOptimization, DNN, CNN",
         stages: [
           {
             imgurl: "food/image0.png",
@@ -303,32 +299,31 @@ export default new Vuex.Store({
         stacks: "Python, NLP(WordVector, WordCloud), Matplotlib",
         stages: [
           {
-            imgurl: "food/image0.png",
-            info: `로그인 및 회원가입 화면. 성별, 나이, 운동량 설정을 통해 권장 섭취량이 결정된다.`,
+            imgurl: "product/image0.png",
+            info: `본격적인 분석 전 데이터를 파악 후 결측치, 이상치 제거 및 가공 작업 시행`,
           },
           {
-            imgurl: "food/image1.png",
-            info: "식단마다 사진을 업로드하여 기록한다.\nObject Detection을 활용해 사진 안의 모든 음식을 찾아 DB에 기록한다.",
+            imgurl: "product/image1.png",
+            info: "데이터를 다양하게 가공하고 시각화해봄으로써 인사이트 도출.\n우리 팀은 검색 키워드에 집중하여 NLP를 하기로 함.",
           },
           {
-            imgurl: "food/image2.png",
-            info: "다음 식단의 메뉴를 추천하는 화면.\n기록된 식단의 영양소 분석을 통해 필요한 영양분이 포함된 음식을 추천해준다.",
+            imgurl: "product/image2.png",
+            info: "성별/나이 예측을 위한 WordVector 학습 후 시각화한 결과.\nSkip-Gram 모델을 이용하여 주변의 단어를 학습하고 예측하는 방식을 사용.",
           },
           {
-            imgurl: "food/image3.png",
-            info: "모델을 학습하면서 여러 가지 지표가 개선되는 것을 보여줌.\n사물의 위치를 잘 찾아 내는지인 IOU와 물체가 정확한지 알려주는 \nObjectness, f1 score 등을 적절히 조합해 손실 함수 및 성능을 측정.",
+            imgurl: "product/image3.png",
+            info: "유사도 평균을 계산해 키워드들을 성별/나이 모델에 넣어 예측.\n키워드 길이 및 개수가 늘어날수록 예측력이 높은 편이다. \n부족한 검색어 데이터는 따로 수집하고 검색어 데이터가 없을 경우의 알고리즘도 구성",
           },
         ],
 
         gg: [
-          "현재 이슈 및 이슈를 해결할 서비스를 생각하여 문제 정의를 잘했다는 평을 받음",
-          "Object Detection 모델을 써보고 Computer Vision 분야에 관심을 가지게 됨.",
-          "팀원 대부분이 비전공이었지만 교육 내용을 바탕으로 프로젝트를 잘 완성시켰다.",
+          "데이터 가공 및 시각화를 통해 인사이트를 얻는 것이 의미있었음.",
+          "처음 상품 종류가 많아서 결과를 내는 것에 막막했는데 추천 시스템 체계를\n      알고 고객 개인에 맞는 추천 알고리즘을 구성했다.",
+          "대부분의 데이터를 활용했지만 검색어에 좀 더 초점을 맞춘 분석 방향이 좋았다고 생각한다.",
         ],
         bb: [
-          "첫 프로젝트인 만큼 협업 과정에서 아쉬운 부분이 많았다.",
-          "시간이 좀 더 있었다면 모델을 더 학습시켜 더 좋은 모델을 완성했을 것 같다.\n      학습 시간이 오래걸려 다음 프로젝트에서 이것을 고려해야 될 것 같다.",
-          "페이지에서 데이터 흐름이 어떻게 되는지 이해가 부족하여 웹 관련 지식이 부족했다고 느낌",
+          "데이터 분석을 주로 Jupyter Notebook으로만 진행했었는데 모듈화를 통해\n      실제 분석하는 것처럼 구성했다면 좋았을 것 같다.",
+          "공모전 후 결측치가 많아 유입 채널을 크게 고려하지 않았는데 실제 분석에서는\n      중요한 변수라 해서 도메인 지식도 중요한 것 같다.",
         ],
       },
     ],
