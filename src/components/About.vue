@@ -9,7 +9,7 @@
         <div class="profile-name">조규영</div>
         <div class="profile-name">
           <div class="small-tag">to be..</div>
-          AI Engineer <span class="small-tag">or</span><br> Backend Developer</div>
+          Data Scientist <span class="small-tag">or</span><br> Backend Developer</div>
       </div>
       <div class="info-all-wrapper">
         <div class="info-wrapper">

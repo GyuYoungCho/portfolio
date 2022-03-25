@@ -48,14 +48,14 @@
           </div>
         </div>
         <div class="gg__wrapper">
-          <h3> 좋았던 점 및 성과 </h3>
+          <h3 v-if="gg"> 좋았던 점 및 성과 </h3>
           <div class="comment" v-for="(g, index) in gg" :key="index">
             <pre><i class="fas fa-medal"></i> &nbsp;{{g}}</pre>
           </div>
           
         </div>
         <div class="bb__wrapper">
-          <h3> 아쉬운 점 및 발전 방향 </h3>
+          <h3 v-if="bb"> 아쉬운 점 및 발전 방향 </h3>
           <div class="comment" v-for="(b, index) in bb" :key="index">
             <pre><i class="fas fa-highlighter"></i> &nbsp;{{b}}</pre>
           </div>

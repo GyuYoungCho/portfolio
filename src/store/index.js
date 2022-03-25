@@ -258,32 +258,23 @@ export default new Vuex.Store({
         stacks: "Python, Tensorflow2, BayesianOptimization, DNN, CNN",
         stages: [
           {
-            imgurl: "food/image0.png",
-            info: `로그인 및 회원가입 화면. 성별, 나이, 운동량 설정을 통해 권장 섭취량이 결정된다.`,
+            imgurl: "semiconductor/image0.png",
+            info: `Dacon의 Baseline을 기반으로 배운 것을 적용`,
           },
           {
-            imgurl: "food/image1.png",
-            info: "식단마다 사진을 업로드하여 기록한다.\nObject Detection을 활용해 사진 안의 모든 음식을 찾아 DB에 기록한다.",
+            imgurl: "semiconductor/image1.png",
+            info: "Activation function으로 mish를 사용하거나 Bayesian Optimization, 앙상블로 성능 개선\n",
           },
           {
-            imgurl: "food/image2.png",
-            info: "다음 식단의 메뉴를 추천하는 화면.\n기록된 식단의 영양소 분석을 통해 필요한 영양분이 포함된 음식을 추천해준다.",
-          },
-          {
-            imgurl: "food/image3.png",
-            info: "모델을 학습하면서 여러 가지 지표가 개선되는 것을 보여줌.\n사물의 위치를 잘 찾아 내는지인 IOU와 물체가 정확한지 알려주는 \nObjectness, f1 score 등을 적절히 조합해 손실 함수 및 성능을 측정.",
+            imgurl: "semiconductor/image2.png",
+            info: "1D CNN과 Resnet 구조 활용해 성능 개선",
           },
         ],
 
         gg: [
-          "현재 이슈 및 이슈를 해결할 서비스를 생각하여 문제 정의를 잘했다는 평을 받음",
-          "Object Detection 모델을 써보고 Computer Vision 분야에 관심을 가지게 됨.",
-          "팀원 대부분이 비전공이었지만 교육 내용을 바탕으로 프로젝트를 잘 완성시켰다.",
-        ],
-        bb: [
-          "첫 프로젝트인 만큼 협업 과정에서 아쉬운 부분이 많았다.",
-          "시간이 좀 더 있었다면 모델을 더 학습시켜 더 좋은 모델을 완성했을 것 같다.\n      학습 시간이 오래걸려 다음 프로젝트에서 이것을 고려해야 될 것 같다.",
-          "페이지에서 데이터 흐름이 어떻게 되는지 이해가 부족하여 웹 관련 지식이 부족했다고 느낌",
+          "일반 머신러닝 모델보다 딥러닝으로 4개를 한 번에 예측하는 것이 더 좋음을 알게 됨.",
+          "1D CNN과 Resnet 아이디어를 내어 순위를 80등에서 10등대 정도로 올림.",
+          "mish 함수나 Bayesian Optimization 등 새로운 기법을 알고 적용해 봄.",
         ],
       },
       {
